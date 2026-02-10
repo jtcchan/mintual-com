@@ -32,7 +32,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-white.png"
               alt="Mintual"
               width={120}
               height={32}

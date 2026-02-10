@@ -12,7 +12,7 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo-white.png"
             alt="Mintual"
             width={120}
             height={32}
@@ -27,7 +27,7 @@ export function Header() {
           </Link>
           <Link
             href="/apply"
-            className="bg-mintual-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition"
+            className="bg-mintual-accent text-white px-6 py-2 rounded-tl-full rounded-br-full font-semibold uppercase text-sm tracking-wide hover:bg-opacity-90 transition"
           >
             Apply Online
           </Link>
@@ -62,7 +62,7 @@ export function Header() {
             </Link>
             <Link
               href="/apply"
-              className="bg-mintual-accent text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-opacity-90 transition"
+              className="bg-mintual-accent text-white px-6 py-3 rounded-tl-full rounded-br-full font-semibold text-center uppercase text-sm tracking-wide hover:bg-opacity-90 transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Apply Online

@@ -33,18 +33,21 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-mintual-dark text-white py-20 md:py-32">
+      <section 
+        className="text-white pt-60 pb-36 md:pt-72 md:pb-40 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+      >
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-5xl lg:text-[76px] font-semibold mb-6 leading-tight drop-shadow-[0_0_25px_rgba(0,0,0,0.4)]">
               A smarter way to get business financing.
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8">
+            <p className="text-lg md:text-xl text-white/90 mb-10 drop-shadow-[0_0_6px_rgba(0,0,0,0.25)]">
               Mintual helps you find and compare multiple business funding options for your small business, giving you more time on things that matter.
             </p>
             <Link
               href="/apply"
-              className="inline-block bg-mintual-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition"
+              className="inline-block bg-mintual-accent text-white px-12 py-5 rounded-tl-full rounded-br-full font-semibold text-lg uppercase tracking-wide hover:bg-opacity-90 transition"
             >
               Apply Online
             </Link>
@@ -53,13 +56,13 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-mintual-navy py-12">
+      <section className="bg-mintual-dark py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {stats.map((stat, i) => (
               <div key={i} className="text-white">
-                <div className="text-4xl md:text-5xl font-bold text-mintual-accent mb-2">{stat.value}</div>
-                <p className="text-gray-300">{stat.label}</p>
+                <div className="text-4xl md:text-[46px] font-semibold text-mintual-accent mb-2 leading-none">{stat.value}</div>
+                <p className="text-mintual-gray">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -126,20 +129,20 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="bg-mintual-dark rounded-2xl p-8 md:p-12 grid md:grid-cols-2 gap-8">
             <div className="text-white">
-              <h3 className="text-2xl font-bold mb-4">Get started in minutes</h3>
+              <h3 className="text-xl font-semibold mb-4">Get started in minutes</h3>
               <Link
                 href="/apply"
-                className="inline-block bg-mintual-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition mb-4"
+                className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition mb-4"
               >
                 Apply Online
               </Link>
-              <p className="text-gray-400 text-sm">Applying will not impact your personal credit score</p>
+              <p className="text-mintual-gray text-sm">Applying will not impact your<br/>personal credit score</p>
             </div>
             <div className="text-white border-t md:border-t-0 md:border-l border-gray-600 pt-8 md:pt-0 md:pl-8">
-              <h3 className="text-2xl font-bold mb-4">Would you rather talk to us?</h3>
-              <p className="text-gray-400 mb-2">Give us a call</p>
-              <p className="text-xl font-semibold">(855) 704-7458</p>
-              <p className="text-gray-400 text-sm">M-F 9am-6pm ET</p>
+              <h3 className="text-xl font-semibold mb-4">Would you rather talk to us?</h3>
+              <p className="text-mintual-gray text-sm mb-2">Give us a call</p>
+              <p className="text-xl font-bold">(855) 704-7458</p>
+              <p className="text-mintual-gray text-sm">M-F 9am-6pm ET</p>
             </div>
           </div>
         </div>
@@ -150,16 +153,16 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-semibold mb-6">
                 Small Business Lending made fast, friendly, and simple.
               </h2>
               <Link
                 href="/apply"
-                className="inline-block bg-mintual-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition"
+                className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition"
               >
                 Apply Online
               </Link>
-              <p className="text-gray-400 mt-4 text-sm">Applying will not impact your credit score.</p>
+              <p className="text-mintual-gray mt-4 text-sm">Applying will not impact your credit score.</p>
             </div>
             <div className="space-y-6">
               {steps.map((step) => (
@@ -170,7 +173,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-semibold">{step.title}</h3>
                     <p className="text-mintual-accent text-sm mb-1">{step.subtitle}</p>
-                    <p className="text-gray-400 text-sm">{step.desc}</p>
+                    <p className="text-mintual-gray text-sm">{step.desc}</p>
                   </div>
                 </div>
               ))}
@@ -180,11 +183,11 @@ export default function Home() {
       </section>
 
       {/* Modern Apply Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-mintual-accent to-mintual-purple text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#4dbd97] to-[#3898ec] text-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-semibold mb-6">
                 A modern way to apply for Small Business Financing
               </h2>
               <ul className="space-y-3 text-lg">
@@ -207,18 +210,18 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-mintual-light">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-mintual-dark mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-mintual-dark mb-6">
             Take your business further with small business financing tailored to you.
           </h2>
           <Link
             href="/apply"
-            className="inline-block bg-mintual-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition"
+            className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition"
           >
             Apply Online
           </Link>
-          <p className="text-mintual-gray mt-4">Applying will not impact your credit score.</p>
+          <p className="text-mintual-gray mt-4 text-sm">Applying will not impact your<br/>credit score.</p>
         </div>
       </section>
     </>
