@@ -12,14 +12,15 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  /* Mintual Brand Colors - matched to original */
-  --color-mintual-dark: #1a1f36;
-  --color-mintual-navy: #252b48;
-  --color-mintual-accent: #4dbd97;
-  --color-mintual-purple: #7c3aed;
-  --color-mintual-light: #fafafa;
-  --color-mintual-gray: #828282;
-  --color-mintual-success: #4dbd97;
+  /* Mintual Brand Colors - matched to live Webflow (mintual.com) */
+  --color-mintual-dark: #000000;       /* Webflow var(--black): nav, header, dark sections */
+  --color-mintual-navy: #023d2e;       /* Webflow .points-number text: dark green */
+  --color-mintual-accent: #4cbd97;     /* Webflow .cta, .header-cta background */
+  --color-mintual-accent-hover: #4ccca1; /* Webflow .cta:hover */
+  --color-mintual-purple: #014c38;     /* Webflow .point-description text: mid dark green */
+  --color-mintual-light: #f9fafb;      /* Webflow ._3-blocks, .small-business, .testimonial bg */
+  --color-mintual-gray: #828282;       /* Webflow .block-description, .footer-description */
+  --color-mintual-success: #4cbd97;    /* matches accent */
 }
 
 body {

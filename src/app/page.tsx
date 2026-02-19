@@ -47,7 +47,7 @@ export default function Home() {
             </p>
             <Link
               href="/apply"
-              className="inline-block bg-mintual-accent text-white px-12 py-5 rounded-tl-full rounded-br-full font-semibold text-lg uppercase tracking-wide hover:bg-opacity-90 transition"
+              className="inline-block bg-mintual-accent text-white px-12 py-5 rounded-tl-full rounded-br-full font-semibold text-lg uppercase tracking-wide hover:bg-mintual-accent-hover transition"
             >
               Apply Online
             </Link>
@@ -136,7 +136,7 @@ export default function Home() {
               </h2>
               <Link
                 href="/apply"
-                className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition"
+                className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-mintual-accent-hover transition"
               >
                 Apply Online
               </Link>
@@ -195,7 +195,7 @@ export default function Home() {
           </h2>
           <Link
             href="/apply"
-            className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition"
+            className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-mintual-accent-hover transition"
           >
             Apply Online
           </Link>
