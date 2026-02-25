@@ -27,7 +27,7 @@ export function Header() {
           </Link>
           <Link
             href="/apply"
-            className="bg-mintual-accent text-white px-6 py-2 rounded-tl-full rounded-br-full font-semibold uppercase text-sm tracking-wide hover:bg-opacity-90 transition"
+            className="bg-mintual-accent text-white px-6 py-2 rounded-tl-full rounded-br-full font-semibold uppercase text-sm tracking-wide hover:bg-mintual-accent-hover transition"
           >
             Apply Online
           </Link>
@@ -62,7 +62,7 @@ export function Header() {
             </Link>
             <Link
               href="/apply"
-              className="bg-mintual-accent text-white px-6 py-3 rounded-tl-full rounded-br-full font-semibold text-center uppercase text-sm tracking-wide hover:bg-opacity-90 transition"
+              className="bg-mintual-accent text-white px-6 py-3 rounded-tl-full rounded-br-full font-semibold text-center uppercase text-sm tracking-wide hover:bg-mintual-accent-hover transition"
               onClick={() => setMobileMenuOpen(false)}
             >
               Apply Online

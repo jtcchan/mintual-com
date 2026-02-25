@@ -47,7 +47,7 @@ export default function Home() {
             </p>
             <Link
               href="/apply"
-              className="inline-block bg-mintual-accent text-white px-12 py-5 rounded-tl-full rounded-br-full font-semibold text-lg uppercase tracking-wide hover:bg-opacity-90 transition"
+              className="inline-block bg-mintual-accent text-white px-12 py-5 rounded-tl-full rounded-br-full font-semibold text-lg uppercase tracking-wide hover:bg-mintual-accent-hover transition"
             >
               Apply Online
             </Link>
@@ -107,43 +107,21 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                <div className="w-12 h-12 bg-mintual-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <Image
-                    src={product.icon}
-                    alt={product.title}
-                    width={28}
-                    height={28}
-                  />
+              <div key={i} className="bg-white p-6">
+                <div className="mb-4">
+                  <div className="flex items-center justify-center w-14 h-14">
+                    <Image
+                      src={product.icon}
+                      alt={product.title}
+                      width={40}
+                      height={40}
+                    />
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold text-mintual-dark mb-2">{product.title}</h3>
+                <p className="text-lg font-semibold text-mintual-dark mb-2">{product.title}</p>
                 <p className="text-mintual-gray text-sm">{product.desc}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Mid Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="bg-mintual-dark rounded-2xl p-8 md:p-12 grid md:grid-cols-2 gap-8">
-            <div className="text-white">
-              <h3 className="text-xl font-semibold mb-4">Get started in minutes</h3>
-              <Link
-                href="/apply"
-                className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition mb-4"
-              >
-                Apply Online
-              </Link>
-              <p className="text-mintual-gray text-sm">Applying will not impact your<br/>personal credit score</p>
-            </div>
-            <div className="text-white border-t md:border-t-0 md:border-l border-gray-600 pt-8 md:pt-0 md:pl-8">
-              <h3 className="text-xl font-semibold mb-4">Would you rather talk to us?</h3>
-              <p className="text-mintual-gray text-sm mb-2">Give us a call</p>
-              <p className="text-xl font-bold">(855) 704-7458</p>
-              <p className="text-mintual-gray text-sm">M-F 9am-6pm ET</p>
-            </div>
           </div>
         </div>
       </section>
@@ -158,7 +136,7 @@ export default function Home() {
               </h2>
               <Link
                 href="/apply"
-                className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition"
+                className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-mintual-accent-hover transition"
               >
                 Apply Online
               </Link>
@@ -217,7 +195,7 @@ export default function Home() {
           </h2>
           <Link
             href="/apply"
-            className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-opacity-90 transition"
+            className="inline-block bg-mintual-accent text-white px-10 py-4 rounded-tl-full rounded-br-full font-semibold uppercase tracking-wide hover:bg-mintual-accent-hover transition"
           >
             Apply Online
           </Link>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Exclude confirmation/result pages
+Disallow: /not-eligible
+Disallow: /success
+
+Sitemap: https://mintual.com/sitemap.xml
