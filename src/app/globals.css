@@ -127,8 +127,11 @@ body {
     width: 100% !important;
     padding-right: 0 !important;
   }
+  /* On tablet/mobile: hide the teal overlay (Rounded Rectangle), show only the dark photo */
   .most-people-section {
-    background-size: cover, cover !important;
+    background-image: url('/images/howitworks-bg.png') !important;
+    background-position: center !important;
+    background-size: cover !important;
   }
 }
 
