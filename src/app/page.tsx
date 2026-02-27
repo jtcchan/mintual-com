@@ -445,65 +445,75 @@ export default function Home() {
       </section>
 
       {/* Modern Apply Section — .a-heading / .background-div */}
+      {/* White background section with decorative teal outline (Group31.png) */}
       <section
         className="modern-apply-section"
-        style={{
-          backgroundImage: "url('/images/modern-apply-bg.png')",
-          backgroundPosition: '0%',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'auto',
-          overflowX: 'hidden',
-        }}
+        style={{ backgroundColor: '#fff', overflow: 'hidden' }}
       >
+        {/* .background-div — contains the decorative border image */}
         <div
           style={{
-            width: '1100px',
+            backgroundImage: "url('/images/modern-apply-bg.png')",
+            backgroundPosition: '0%',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'auto',
+            width: '1500px',
             maxWidth: '100%',
             marginLeft: 'auto',
             marginRight: 'auto',
             paddingTop: '180px',
             paddingBottom: '220px',
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '10px',
           }}
-          className="modern-apply-inner"
         >
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h2
-              style={{
-                fontFamily: 'Poppins, sans-serif',
-                fontSize: '45px',
-                fontWeight: 600,
-                lineHeight: '55px',
-                color: '#fff',
-                margin: 0,
-              }}
-            >
-              A modern way to apply for Small Business Financing
-            </h2>
-            <p
-              style={{
-                color: '#fff',
-                fontFamily: 'Poppins, sans-serif',
-                fontSize: '18px',
-                lineHeight: '150%',
-                marginTop: '20px',
-              }}
-            >
-              ✓ Easy online, process focused on what matters<br />
-              ✓ Straightforward payment terms<br />
-              ✓ No in-person meetings required
-            </p>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Image
-              src="/images/modern-apply.png"
-              alt="Modern application process"
-              width={547}
-              height={438}
-              style={{ maxWidth: '100%', height: 'auto' }}
-            />
+          {/* .a-heading-div — 2-column grid */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: '5px',
+              width: '1100px',
+              maxWidth: 'calc(100% - 40px)',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+            className="modern-apply-inner"
+          >
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingRight: '20px' }}>
+              <h2
+                style={{
+                  fontFamily: 'Poppins, sans-serif',
+                  fontSize: '45px',
+                  fontWeight: 600,
+                  lineHeight: '55px',
+                  color: '#333',
+                  margin: 0,
+                }}
+              >
+                A modern way to apply for Small Business Financing
+              </h2>
+              <p
+                style={{
+                  color: '#828282',
+                  fontFamily: 'Poppins, sans-serif',
+                  fontSize: '18px',
+                  lineHeight: '150%',
+                  marginTop: '20px',
+                }}
+              >
+                ✓ Easy online, process focused on what matters<br />
+                ✓ Straightforward payment terms<br />
+                ✓ No in-person meetings required
+              </p>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <Image
+                src="/images/modern-apply.png"
+                alt="Modern application process"
+                width={547}
+                height={438}
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+            </div>
           </div>
         </div>
       </section>
