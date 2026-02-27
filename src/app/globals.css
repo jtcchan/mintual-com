@@ -29,6 +29,151 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* =========================================
+   Responsive breakpoints for page sections
+   ========================================= */
+
+/* Hero responsive */
+@media screen and (max-width: 991px) {
+  .hero-section {
+    background-size: cover !important;
+    background-position: 70% 0 !important;
+    padding-top: 140px !important;
+    padding-bottom: 100px !important;
+  }
+  .hero-section h1 {
+    font-size: 60px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    background-size: cover !important;
+    background-position: 50% 0 !important;
+    padding-top: 140px !important;
+    padding-bottom: 100px !important;
+  }
+  .hero-section h1 {
+    font-size: 40px !important;
+  }
+  .hero-section p {
+    font-size: 18px !important;
+  }
+}
+
+/* Stats card responsive */
+@media screen and (max-width: 767px) {
+  .stats-card-grid {
+    grid-template-columns: 1fr !important;
+    width: auto !important;
+    margin-top: -50px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .stats-value {
+    font-size: 26px !important;
+  }
+  .stats-label {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+}
+
+/* Why Mintual responsive */
+@media screen and (max-width: 991px) {
+  .grid-why-mintual {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-why-mintual {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .section-title-h2 {
+    font-size: 30px !important;
+  }
+}
+
+/* Products (6-card) responsive */
+@media screen and (max-width: 991px) {
+  .grid-products {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-products {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media screen and (max-width: 479px) {
+  .grid-products {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* How It Works responsive */
+@media screen and (max-width: 991px) {
+  .howitworks-inner {
+    flex-direction: column !important;
+  }
+  .howitworks-left,
+  .howitworks-right {
+    flex: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+  .most-people-section {
+    background-size: cover, cover !important;
+  }
+}
+
+/* Modern Apply responsive */
+@media screen and (max-width: 991px) {
+  .modern-apply-section {
+    background-image: url('/images/modern-apply-bg-mobile.png') !important;
+    background-size: 80% 100% !important;
+  }
+  .modern-apply-inner {
+    grid-template-columns: 1fr !important;
+    padding-top: 50px !important;
+    padding-bottom: 40px !important;
+    margin: 60px 10px !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modern-apply-section {
+    background-image: url('/images/modern-apply-bg-mobile.png') !important;
+    background-size: 80% 100% !important;
+  }
+  .modern-apply-inner {
+    grid-template-columns: 1fr !important;
+    padding-top: 50px !important;
+    padding-bottom: 40px !important;
+    width: 100% !important;
+  }
+}
+
+/* Footer responsive */
+@media screen and (max-width: 991px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .footer-nav-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-nav-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

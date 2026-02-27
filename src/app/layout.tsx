@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { Header, Footer, Analytics, GTMNoScript } from '@/components'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Mintual | Find The Right Small Business Loans',
@@ -31,7 +28,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className={inter.className}>
+      <body>
         <GTMNoScript />
         <Header />
         <main className="pt-16">

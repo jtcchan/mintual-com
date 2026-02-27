@@ -22,12 +22,27 @@ export function Header() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/resources" className="text-white hover:text-mintual-accent transition">
+          <Link
+            href="/resources"
+            style={{ color: '#fff', fontFamily: 'Poppins, sans-serif', textDecoration: 'none' }}
+            className="hover:text-mintual-accent transition"
+          >
             Resources
           </Link>
           <Link
             href="/apply"
-            className="bg-mintual-accent text-white px-6 py-2 rounded-tl-full rounded-br-full font-semibold uppercase text-sm tracking-wide hover:bg-mintual-accent-hover transition"
+            style={{
+              backgroundColor: '#4cbd97',
+              color: '#fff',
+              borderTopLeftRadius: '100px',
+              borderBottomRightRadius: '100px',
+              padding: '15px 50px',
+              fontFamily: 'Poppins, sans-serif',
+              fontWeight: 600,
+              textDecoration: 'none',
+              display: 'inline-block',
+            }}
+            className="hover:bg-mintual-accent-hover transition"
           >
             Apply Online
           </Link>
